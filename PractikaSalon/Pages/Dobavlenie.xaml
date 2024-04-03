@@ -1,0 +1,29 @@
+﻿<Page x:Class="PractikaSalon.Pages.Dobavlenie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PractikaSalon.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Dobavlenie">
+
+    <Grid>
+        <TextBox x:Name="textboximi" HorizontalAlignment="Left" Margin="30,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194"/>
+        <TextBox x:Name="textboxfamilia" HorizontalAlignment="Left" Margin="30,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194"/>
+        <TextBox x:Name="textboxotchestvo" HorizontalAlignment="Left" Margin="30,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194"/>
+        <TextBox x:Name="textboxtelefon" HorizontalAlignment="Left" Margin="30,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194"/>
+        <TextBox x:Name="textboxemail" HorizontalAlignment="Left" Margin="30,276,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194"/>
+        <Label x:Name="lbimi" Content="Введите имя" HorizontalAlignment="Left" Margin="30,43,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbfamilia" Content="Введите фамилию" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lablotchestvo" Content="Введите отчесвтво*" HorizontalAlignment="Left" Margin="22,146,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbtelefon" Content="Введите номер телефона" HorizontalAlignment="Left" Margin="21,194,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbemail" Content="Введите Email" HorizontalAlignment="Left" Margin="24,246,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbneobizan" Content="* не обязательные поля" HorizontalAlignment="Left" Margin="18,404,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btdobav" Content="Добавить" HorizontalAlignment="Left" Margin="195,356,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnochist" Content="Очистить" HorizontalAlignment="Left" Margin="517,356,0,0" VerticalAlignment="Top" Click="btnochist_Click"/>
+        <Button x:Name="btredactor" Content="Редактировать" HorizontalAlignment="Left" Margin="357,356,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnudali" Content="Удалить" HorizontalAlignment="Left" Margin="43,356,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

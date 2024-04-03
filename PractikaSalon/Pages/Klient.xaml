@@ -1,0 +1,30 @@
+﻿<Page x:Class="PractikaSalon.Pages.Klient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PractikaSalon.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Klient">
+
+    <Grid>
+        <Button x:Name="btaddklient" Content="Добавить клиента" HorizontalAlignment="Left" Margin="240,30,0,0" VerticalAlignment="Top" Height="43" Width="160" Click="btaddklient_Click"/>
+        <Button x:Name="btaddzakaz" Content="Перейти к заказам" HorizontalAlignment="Left" Margin="423,30,0,0" VerticalAlignment="Top" Height="43" Width="151" Click="btaddzakaz_Click"/>
+        <Button x:Name="btaddsotrudnik" Content="Перейти к сотрудникам" HorizontalAlignment="Left" Margin="592,30,0,0" VerticalAlignment="Top" Height="43" Width="187" Click="btaddsotrudnik_Click"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Background="{Binding Background}" Margin="34,122,596,66">
+            <Grid>
+                <StackPanel x:Name="PanelEmp" Margin="0,5,5,5">
+                    <Image Width="122" Height="95" Margin="5" Source="/Image/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"/>
+                    <TextBlock Text="Imi" FontWeight="Bold" TextAlignment="Center"/>
+                    <TextBlock Text="Familia" TextAlignment="Center"/>
+                    <TextBlock Text="Othestvo" TextAlignment="Center"/>
+                    <TextBlock Text="Telefon" TextAlignment="Center"/>
+                    <TextBlock Text="Email" TextAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Label x:Name="lbtext" Content="" HorizontalAlignment="Left" Margin="34,29,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

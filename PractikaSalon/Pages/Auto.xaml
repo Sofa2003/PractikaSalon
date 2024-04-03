@@ -1,0 +1,46 @@
+﻿<Page x:Class="PractikaSalon.Pages.Auto"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PractikaSalon.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="460" d:DesignWidth="850"
+      Title="Auto">
+
+    <Grid>
+
+        <Label x:Name="labellogin" Content="Логин" HorizontalAlignment="Left" Margin="307,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelparoli" Content="Пароль" HorizontalAlignment="Left" Margin="306,174,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="teboxlogin" HorizontalAlignment="Center" Margin="0,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" Height="27"/>
+        <Button x:Name="btnvxod" Content="Войти" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" Click="btnvxod_Click"/>
+        <TextBox x:Name="teboxparoli" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" Height="26"/>
+        <Label x:Name="labledobro" Content="Добро пожаловать" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="texblocvvodparoli" HorizontalAlignment="Left" Margin="317,215,0,0" TextWrapping="Wrap" Text="Введите пароль" VerticalAlignment="Top" Foreground="#FF787575" IsHitTestVisible="False">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text,ElementName=teboxparoli}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBlock x:Name="texblockvvod" HorizontalAlignment="Left" Margin="318,133,0,0" TextWrapping="Wrap" Text="Введите логин" VerticalAlignment="Top" Foreground="#FF787575" IsHitTestVisible="False">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text,ElementName=teboxlogin}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+</Page>
